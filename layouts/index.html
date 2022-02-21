@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth ">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore The World - Travigo</title>
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body class="font-poppins text-textColor list-none w-screen " id="smooth-scrollbar">
+  <div class="from-gradientGreen bg-gradient-to-b w-full h-screen">  
+ 
+    <nav class="navbar flex flex-row justify-between px-14  py-8 items-end ">
+      <!-- Logo side -->
+      <div class="logo ">
+        <img src="images/travigologo.png" class="w-32 " alt="" srcset="">
+      </div>
+      <!-- Middle part -->
+      <div class=" hidden middle-part lg:flex flex-row ">
+        <ul class="flex space-x-8">
+          <a href="#" class=" text-textColor hover:text-green transition-all"><li>Home</li></a>
+        <a href="#section3">  <li class=" text-textColor hover:text-green transition-all">About</li></a>
+        <button class=" text-textColor hover:text-green transition-all" id="priceButton">Pricing<i class="fa-solid fa-angle-down text-green"></i></button>
+          <a href="#footer"><li class=" text-textColor hover:text-green transition-all">Contact</li></a>
+          <a href="#section5"><li class=" text-textColor hover:text-green transition-all">Blog</li></a>
+        
+        </ul>
+      </div>
+        <!-- Right Side -->
+        <div class=" hidden right-side lg:flex flex-row flex-nowrap space-x-2 items-center">
+          <a href="index2.html" class=" text-textColor">Login</a>
+         <a href="index3.html"><button class="bg-green text-white rounded-full w-28 h-11  shadow-sm">Register</button></a> 
+        </div>
+        <!-- Hamburger (Menu) Icon -->
+        <div class="menu-icon 2xl:hidden xl:hidden lg:hidden">
+        <button id="hamburgerButton"> <svg xmlns="http://www.w3.org/2000/svg"   width="30" height="30" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg></button> 
+         </div>
+      </nav>
+ <!-- Mobile Navigation -->
+ <div class="mobile-nav hidden lg:hidden">
+ <nav class=" flex flex-col justify-start items-center bg-white space-y-3  transition-all ">
+  <a href="#" class=" text-textColor"><li>Home</li></a>
+  <a href="#section3">  <li class=" text-textColor">About</li></a>
+  <a href="#section6"><button class=" text-textColor">Pricing</button></a>
+  <a href="#footer"><li class=" text-textColor">Contact</li></a>
+  <a href="#section5"><li class=" text-textColor">Blog</li></a>
+  <a href="index2.html" class=" text-textColor">Login</a>
+ <a href="index3.html"><button class="bg-green text-white rounded-full w-24 h-8 font-medium shadow-sm">Register</button></a>
+ </nav>
+</div>
+ <!--priceCard --- With this div below, we are making the price card in center. -->
+ <div class="hidden md:hidden " id="priceCard">
+ <div class=" flex   justify-center transition-all " > 
+ <!-- Pricing Card of the Pricing option in menu  -->
+ <div class="pricing-card flex flex-col justify-center items-center flex-nowrap bg-lightGreen space-y-3 w-52 h-36 rounded-lg shadow-md shadow-gradientGreen ">
+    <!-- Monthly part  -->
+   <div class="monthly flex flex-row flex-nowrap justify-start items-center space-x-2"> 
+<img src="Images/orangediamond.png" alt="" srcset="" class="w-10">
+<a href="#section6"><p class="hover:text-orange transition-all"><span class="text-orange font-semibold">Buy</span> Monthly plan</p></a>
+   </div> 
+    <!-- Yearly part -->
+   <div class="yearly flex flex-row pr-4 items-center ">
+<img src="Images/greendiamond.png" class="w-10" alt="" srcset="">
+<a href="#section6"><p class="hover:text-green transition-all"><span class="text-green font-semibold">Buy</span> Yearly plan</p> </a>
+   </div>
+ </div>
+ </div>
+</div>
+ <!-- Section 1 -->
+<div class="header-section py-16 overflow-x-hidden">
+  <img src="Images/leaf1.png"class=" leaf-1 w-32 absolute pt-32 lg:z-0 md:z-0 -z-10" alt="" srcset="">
+
+    <img src="Images/leaf2.png"class="leaf-2png w-32 absolute right-0  lg:z-0 md:z-0 -z-10" alt=""> 
+    <div class="header-text flex flex-col justify-start items-center space-y-7 text-center">
+<h1 class="header-text-h8   text-7xl font-bold  leading-tight">It's a Big World Out 
+   <br>    There,Go Explore.</h1>
+   <div class="flex flex-col justify-center items-center text-center space-y-8 p-andbuttons ">
+<p class="the-secondtext text-grayColor text-xl">We always make our customers happy by providing many choices.</p>
+<div class="header-buttons flex flex-row justify-center space-x-3 ">
+  <button class="first-button bg-green text-white w-44 h-14 rounded-full text-lg hover:bg-originalWhite hover:text-green transition-all">Get Started</button>
+  <button class="second-button text-textColor bg-originalWhite w-44 h-14 rounded-full text-lg hover:bg-textColor hover:text-white transition-all">Get a demo</button>
+ 
+      </div>
+    </div>
+    <div class="header-image flex justify-center">
+      <img src="Images/headerimg.png" class="header-img w-5/6 rounded-lg"alt="" srcset="">
+    </div>
+    </div>
+ <div class="section-2 flex flex-row flex-wrap justify-center items-center pt-20  space-x-8">
+   <img src="Images/monday.png" class="xl:w-44 lg:w-40  md:w-36 w-28" alt="" srcset="">
+   <img src="Images/paypal.png" class="xl:w-44 lg:w-40 md:w-36 w-28" alt="">
+   <img src="Images/traveloka.png" class="xl:w-44 lg:w-40 md:w-36 w-28" alt="">
+   <img src="Images/slack.png"  class=" xl:w-44 lg:w-40 md:w-36 w-28"alt="">
+   <img src="Images/tokopedia.png"  class="xl:w-44 lg:w-40 md:w-36 w-28"alt="">
+
+ </div>
+ <!---Section 3-->
+ <div class="section-3 pt-20 flex flex-row flex-wrap-reverse justify-center items-center space-x-6 overflow-x-hidden" id="section3">
+<img src="Images/img_3.png" class="lg:w-1/2 md:w-1/2 sm:w-1/2 w-2/2" alt="">
+   <div class="text-section3 flex flex-col  items-start justify-start space-y-4  lg:scale-100  md:scale-100 sm:75">
+     <h1 class="font-bold text-4xl leading-tight">Sweet Memories <br>
+    Come To Life Again</h1>
+    <p class="text-grayColor">What we have always taken care of for 10 years <br> is always prioritizing the comfort of our users.So <br> don't doubt
+      our quality.
+    </p>
+    <div class="cards flex flex-row justify-center space-x-4 pt-4 ">
+    <div class="card-1 bg-lightGreen text-grayColor rounded-lg flex flex-col justify-center items-center text-center space-y-1 w-28 h-28">
+<h1 class="text-green font-bold text-2xl">10</h1>
+<p class="text-sm">Years <br> Experience</p>
+    </div>
+    <div class="card-2 bg-lightGreen text-grayColor rounded-lg flex flex-col justify-center items-center text-center space-y-1 w-28 h-28">
+      <h1 class="text-green font-bold text-2xl">400</h1>
+      <p class="text-sm">Destination <br> Collaboration</p>
+          </div>
+          <div class="card-3 bg-lightGreen text-grayColor rounded-lg flex flex-col justify-center items-center text-center space-y-1 w-28 h-28">
+            <h1 class="text-green font-bold text-2xl">30K+</h1>
+            <p class="text-sm">Happy <br> Customer</p>
+                </div>
+  </div>
+   </div>
+ </div>
+      </div>
+      <!---SECTION 4-->
+      <div class="section-4 flex flex-col justify-center items-center space-y-14 overflow-x-hidden" id="section4">
+        <div class="header-section4 text-center">
+<h1 class="text-5xl font-bold">Explore The Beauty Of The World</h1>
+</div>
+<div class="input-div flex flex-row flex-wrap justify-center items-center rounded-full shadow-lg space-x-4 w-auto lg:w-100 md:w-100   h-32 lg:h-24 md:h-24 ">
+  <div class="first-part flex flex-row justify-center items-center space-x-3">
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="22" height="22"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ff894e"><path d="M86,14.33333c-33.57851,0 -60.91667,27.33815 -60.91667,60.91667c0,15.07433 5.53018,28.89898 14.61328,39.52865l0.028,0.02799l0.02099,0.028c0,0 25.91442,29.57021 35.14046,38.37386c6.17813,5.89029 16.04273,5.89029 22.22086,0c10.51629,-10.03045 35.15446,-38.38786 35.15446,-38.38786l0.014,-0.021l0.021,-0.02099c9.09115,-10.62978 14.62028,-24.45431 14.62028,-39.52865c0,-33.57851 -27.33815,-60.91667 -60.91667,-60.91667zM86,25.08333c27.76815,0 50.16667,22.39851 50.16667,50.16667c0,12.45284 -4.53813,23.76677 -12.04476,32.54394c-0.04888,0.0559 -25.25761,28.88693 -34.43359,37.639c-2.12803,2.02888 -5.2556,2.02888 -7.38363,0c-7.66895,-7.31785 -34.35575,-37.55082 -34.43359,-37.639l-0.007,-0.007c-7.49668,-8.77648 -12.03076,-20.08756 -12.03076,-32.53695c0,-27.76815 22.39851,-50.16667 50.16667,-50.16667zM86,53.75c-6.71875,0 -12.43841,2.71306 -16.111,6.84473c-3.67259,4.13167 -5.389,9.42958 -5.389,14.65527c0,5.22569 1.71641,10.52361 5.389,14.65527c3.67259,4.13167 9.39225,6.84473 16.111,6.84473c6.71875,0 12.43841,-2.71306 16.111,-6.84473c3.67259,-4.13167 5.389,-9.42958 5.389,-14.65527c0,-5.22569 -1.71641,-10.52361 -5.389,-14.65527c-3.67259,-4.13167 -9.39225,-6.84473 -16.111,-6.84473zM86,64.5c4.03125,0 6.37409,1.31819 8.0765,3.2334c1.70241,1.91521 2.6735,4.67979 2.6735,7.5166c0,2.83681 -0.97109,5.60139 -2.6735,7.5166c-1.70241,1.91521 -4.04525,3.2334 -8.0765,3.2334c-4.03125,0 -6.37409,-1.31819 -8.0765,-3.2334c-1.70241,-1.91521 -2.6735,-4.67979 -2.6735,-7.5166c0,-2.83681 0.97109,-5.60139 2.6735,-7.5166c1.70241,-1.91521 4.04525,-3.2334 8.0765,-3.2334z"></path></g></g></svg>
+    <div class="text-part1 flex flex-col justify-start items-start">
+<select name="Location" id="location">
+<option value="location">Location</option>
+<option value="Paris">Paris</option>
+<option value="Dubai">Dubai</option>
+<option value="Germany">Germany</option>
+<option value="Maldives">Maldives</option>
+<option value="Bora Bora">Bora Bora</option>
+<option value="More">More</option>
+</select>
+<p class="text-grayColor">Where are you going?</p>
+    </div>
+    <div class="gray-line text-gray-300 pl-2">|</div>
+  </div>
+  <div class="second-part flex flex-row justify-center items-center space-x-3">
+    <i class="fa-solid fa-calendar-days text-orangeIcon "></i>
+    <div class="text-part1 flex flex-col justify-start items-start">
+<select name="Location" id="location">
+<option value="check-in">Check in</option>
+
+</select>
+<p class="text-grayColor">Add date</p>
+    </div>
+    <div class="gray-line text-gray-300 pl-2">|</div>
+  </div>
+  <div class="third-part flex flex-row justify-center items-center space-x-3">
+    <i class="fa-solid fa-calendar-days text-orangeIcon "></i>
+    <div class="text-part1 flex flex-col justify-start items-start">
+  <select name="Location" id="location">
+  <option value="check-in">Check out</option>
+  
+  </select>
+  <p class="text-grayColor">Add date</p>
+    </div>
+    <div class=" flex gray-line text-gray-300 pl-2">|</div>
+  </div>
+  <div class="search-button cursor-pointer text-white bg-green w-12 h-12  text-center rounded-full flex justify-center items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="35" " viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: msFilter"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+  </div>
+  </div>
+ <div class="imagesection4">
+   <img src="Images/img_2.png" alt="" class="w-full">
+ </div>
+</div>
+ <!-- SECTION 5 -CUSTOMER CARDS -->
+ <div class="section-5 flex flex-col justify-start items-center bg-section5 mt-14 h-100 text-center pt-32 " id="section5">
+  <div class="text-section flex flex-col justify-center items-center space-y-8">
+    <h1 class="font-bold text-5xl tracking-normal ">What Our Customer Say ?</h1>
+    <p class="text-grayColor">Some testimonials from those who go travelling using our services</p>
+    </div> <!--Text-section close tag-->
+    <img src="Images/leaf3.png" class="w-28 absolute left-0 -translate-y-32" alt=""> 
+      <!-- PROFILES -->
+      <div class=" card-section5 flex flex-wrap flex-row justify-center lg:space-x-8 md:space-x-8 sm:space-x-4 space-y-8 lg:space-y-0 md:space-y-0 sm:space-y-0 items-center pt-20 bg-section5">
+        <div class=" card-1.5 bg-originalWhite flex flex-col justify-center items-center  rounded-3xl w-86 h-86">
+          <div class="profile-div flex flex-col justify-center items-center">
+          <img src="Images/Profile1.png" class="w-24" alt="">
+        </div> <!---The close tag of profile-div -->
+        <div class="text-part5 flex flex-col justify-center items-center pt-4 space-y-3">
+          <h1 class="font-bold text-lg">Theresa Jordan</h1>
+          <p class="text-grayColor ">Traveler</p>
+          <div class="star-div flex flex-row justify-center items-center space-x-2 text-orangeIcon">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="text-grayColor pt-3">"I think this is the best traveler <br> service I have ever tried and I <br> 
+        recommend it to you."</p>
+      </div>
+
+        </div> <!---YHE CLOSE TAG OF CARD 1.5-->
+        <div class=" card-1.5 bg-originalWhite flex flex-col justify-center items-center  rounded-3xl w-86 h-86">
+
+          <div class="profile-div flex justify-center items-center">
+          <img src="Images/profile3.png" class="w-24" alt="">
+        </div>
+        <div class="text-part5 flex flex-col justify-center items-center pt-4 space-y-3">
+          <h1 class="font-bold text-lg">Wode Warren</h1>
+          <p class="text-grayColor ">Photographer</p>
+          <div class="star-div flex flex-row justify-center items-center space-x-2 text-orangeIcon">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star text-gray-200"></i>
+        </div>
+        <p class="text-grayColor pt-3">"Thanks to travigo I can now <br>
+          realize my dream of travelling <br> around the world"</p>
+        </div>
+        </div>
+        <div class="card-1.5 bg-originalWhite flex flex-col justify-center items-center  rounded-3xl w-86 h-86 ">
+       
+          <div class="profile-div flex justify-center items-center">
+          <img src="Images/profile2.png" class="w-24" alt="">
+        </div>
+        <div class="text-part5 flex flex-col justify-center items-center pt-4 space-y-3">
+          <h1 class="font-bold text-lg">Jenny Wilson</h1>
+          <p class="text-grayColor ">Traveler</p>
+          <div class="star-div flex flex-row justify-center items-center space-x-2 text-orangeIcon">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="text-grayColor pt-3">"Trivago helps me a lot in <br> finding interesting tourist <br> desinations."</p>
+        </div>
+       
+        <img src="Images/leaf4.png" class=" absolute w-28 right-0 translate-y-68 hidden lg:flex" alt="">
+        
+        </div> 
+     <!--The close tag of card-section5-->
+   </div> <!--The close tag of section 5 -->
+ 
+
+<!-- SECTION 6 -->
+ <div class="section-6 flex flex-col justify-center items-center lg:pt-72 md:pt-28 sm:pt-28 pt-28 " id="section6">
+<div class="text-section6 flex flex-col justify-center items-center space-y-8">
+  <h1 class="font-bold text-5xl tracking-normal ">Choose The Plan That Suits You</h1>
+  <p class="text-grayColor text-xl">Many attractive offers by becoming a premium member</p>
+</div>
+
+<div class="toggle-div flex flex-row justify-center items-center rounded-full border mt-10 h-14 w-52 scale-110 ">
+<button class=" focus:bg-green focus:text-originalWhite transition-all h-14 rounded-full w-32" id="monthlyButton">Monthly</button>
+<button class=" focus:bg-green focus:text-originalWhite transition-all h-14 rounded-full w-32" id="yearlyButton">Yearly</button>
+</div>
+<div class="toggle-div1 hidden ">
+<div class="arrow-div flex flex-row justify-center items-center space-x-2 lg:ml-96 md:ml-96 sm:ml-96 ml-32 overflow-x-hidden">
+<img src="Images/arrow.png" class="w-1/4" alt="">
+<button class="bg-lightOrange text-orangeIcon w-44 h-12 rounded-full">You will save 20%</button>
+</div>
+</div>
+<div class="price-cards flex flex-row flex-wrap lg:space-x-8 md:space-x-8 sm:space-x-8 space-x-0 lg:space-y-0 md:space-y-0 sm:space-y-4 space-y-8 justify-center items-center mt-20 lg:scale-100 md:scale-100 sm:scale-100 scale-90">
+  <!-- Monthly Price -->
+  <div class="monthly-price flex flex-col space-y-4 justify-center items-center border rounded-3xl w-96 h-81 transition-all ">
+<div class="row-part flex flex-row justify-center items-center space-x-4">
+<img src="Images/orangediamond.png" class="w-12" alt="">
+<div class="colrowpart flex flex-col jsuitfy-center items-start">
+ <p class="font-semibold">Standard Member</p>
+ <p class="text-grayColor">Suitable for all users</p>
+</div>
+<h1 class="text-grayColor text-xl">Free</h1>
+</div>
+<div class="line bg-gray-100 w-72 h-0.5"></div>
+
+<div class="tick-div flex flex-col justify-start items-start space-y-5 pr-12">
+<div class="rowcolpart flex flex-row justify-start items-center space-x-2">
+<img src="Images/tick.png" class=" w-6" alt="">
+<p>Find popular destination</p>
+</div>
+
+<div class="rowcolpart flex flex-row justify-start items-center space-x-2 ">
+  <img src="Images/tick.png" class=" w-6" alt="">
+  <p>Daily destination news</p>
+  </div>
+
+  <div class="rowcolpart flex flex-row justify-start items-center space-x-2 ">
+    <img src="Images/tick.png" class=" w-6" alt="">
+    <p>You can view travel stats</p>
+    </div>
+  </div>
+<button class="border rounded-full text-center w-64 h-16 hover:bg-green hover:text-originalWhite transition-all">Get Started</button>
+
+  </div>
+  <!-- Yearly price -->
+  <div class="yearly-price flex flex-col space-y-4 justify-center items-start border border-gray-200  rounded-3xl pl-12 lg:w-99.5 md:w-99.5 sm:w-99.5 w-96 lg:h-81 md:h-81 sm:h-81 h-97 transition-all ">
+    <div class="row-part flex flex-row lg:flex-nowrap md:flex-nowrap sm:flex-nowrap flex-wrap justify-center items-center space-x-4">
+    <img src="Images/greendiamond.png" class="w-12" alt="">
+    <div class="colrowpart flex flex-col justify-center items-start">
+     <p class="font-semibold">Premium Member</p>
+     <p class="text-grayColor">Suitable for enthusiast travelers</p>
+    </div>
+    <h1 class="text-green font-medium text-3xl pl-6">$60</h1>
+    <h1 class="text-grayColor pt-4 ">/Year</h1>
+    </div>
+    <div class="line bg-gray-100 w-72 h-0.5"></div>
+    <div class="tick2 flex flex-row justify-start items-start lg:flex-nowrap md:flex-nowrap sm:flex-nowrap flex-wrap">
+    <div class="tick-div flex flex-col justify-start items-start space-y-5 pr-12">
+    <div class="rowcolpart flex flex-row justify-start items-center space-x-2">
+    <img src="Images/tick.png" class=" w-6" alt="">
+    <p>Big discount</p>
+    </div>
+    
+    <div class="rowcolpart flex flex-row justify-start items-center space-x-2 ">
+      <img src="Images/tick.png" class=" w-6" alt="">
+      <p>Advanced travel stats</p>
+      </div>
+    
+      <div class="rowcolpart flex flex-row justify-start items-center space-x-2 ">
+        <img src="Images/tick.png" class=" w-6" alt="">
+        <p>Priority booking schedule</p>
+        </div>
+      
+  </div>
+  <!-- The 2 last ones in Yearly Card -->
+  <div class="colpart2 flex flex-col justify-start items-start space-y-5">
+  <div class="rowcolpart flex flex-row justify-start items-center space-x-2 ">
+    <img src="Images/tick.png" class=" w-6" alt="">
+    <p>Invite friends feature</p>
+    </div>
+  
+    <div class="rowcolpart flex flex-row justify-start items-center space-x-2 ">
+      <img src="Images/tick.png" class=" w-6" alt="">
+      <p>No ads & tax</p>
+      </div>
+
+  </div>
+</div>
+  <button class="border rounded-full text-center w-72 h-16 hover:bg-green hover:text-originalWhite transition-all lg:ml-28 md:ml-28 sm:ml-28 ml-0">Get Started</button>
+</div> 
+</div>
+
+
+<!-- Footer by me :) -->
+ <footer class="flex justify-start md:justify-center sm:justify-center items-start  flex-wrap lg:flex-nowrap text-left bg-section5 h-auto w-screen mt-24 pt-14 pl-4  lg:space-x-24  md:space-x-14 space-x-0 " id="footer"> 
+  <img src="Images/leaf5.png" class="w-20 absolute left-0 -translate-y-28" alt="">
+ 
+<div class="first-one flex flex-col justify-start items-start space-y-4 lg:mb-24 md:mb-24 sm:mb-24 mb-12">
+<img src="Images/travigologo.png" class="w-44" alt="">
+<p class="text-grayColor pl-4">We always make our customer <br>
+happy by providing as many <br>
+choices as possible.</p>
+</div>
+
+<div class="footer-1 flex flex-row  flex-nowrap justify-start items-start h-auto space-x-12 pl-4">
+<div class="first-one flex flex-col justify-start items-start space-y-4 ">
+<h1 class="font-semibold">About</h1>
+  <ul class="flex flex-col space-y-4 justify-start items-start text-grayColor">
+    <a href="#" class="hover:text-green transition-all"><li>About us</li></a>
+    <a href="#" class="hover:text-green transition-all"><li>Features</li></a>
+    <a href="#" class="hover:text-green transition-all"><li>News</li></a>
+    <a href="#" class="hover:text-green transition-all"><li>Menu</li></a>
+  </ul>
+</div>
+
+  <div class="first-one flex flex-col justify-start items-start space-y-4 ">
+    <h1 class="font-semibold">Company</h1>
+      <ul class="flex flex-col space-y-4 justify-start items-start text-grayColor">
+        <a href="#" class="hover:text-green transition-all"><li>Why Travigo?</li></a>
+        <a href="#" class="hover:text-green transition-all"><li>Partner With Us</li></a>
+        <a href="#" class="hover:text-green transition-all"><li>FAQ</li></a>
+        <a href="#" class="hover:text-green transition-all"><li>Blog</li></a>
+      </ul>
+      </div>
+    </div>
+  
+    <div class="footer-1.2 flex flex-row justify-center items-start flex-wrap h-auto space-x-8 md:mt-0 sm:mt-0 lg:mt-0 mt-12 pl-0 md:pl-0 lg:pl-0 sm:pl-0">
+      <div class="first-one flex flex-col justify-start items-start space-y-4 ">
+        <h1 class="font-semibold">Support</h1>
+          <ul class="flex flex-col space-y-4 justify-start items-start text-grayColor">
+            <a href="#" class="hover:text-green transition-all"><li>Account</li></a>
+            <a href="#" class="hover:text-green transition-all"><li>Support Center</li></a>
+            <a href="#" class="hover:text-green transition-all"><li>FeedBack</li></a>
+            <a href="#" class="hover:text-green transition-all"><li>Contact us</li></a>
+            <a href="#" class="hover:text-green transition-all"><li>Accessibility</li></a>
+          </ul>
+          </div>
+
+          <div class="first-one flex flex-col justify-start items-start space-y-4 ">
+            <h1 class="font-semibold">Get in Touch</h1>
+             <p>Question or feedback? <br>
+            We'd love to hear from you</p>
+          <div class="div-input">
+            <input type="email" name="email" id="emailInput" placeholder="Email Address" class="rounded-full text-xs h-11 w-52  pl-3 relative focus:border-none focus:outline-green bg-originalWhite">
+            <button class="bg-green rounded-full w-8 h-8 text-center pl-1.5 absolute -translate-x-10 mt-1"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              width="20" height="20"
+              viewBox="0 0 172 172"
+              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M136.35233,21.4187c-0.46427,0.08667 4.27951,-1.49425 -105.81628,36.3004c-8.38937,2.00454 -11.35267,12.43641 -5.23391,18.55517c0.50424,0.50391 -2.14127,-1.2853 43.66045,27.60264c28.89802,45.81751 27.09773,43.1542 27.60298,43.66045c6.08114,6.08114 16.5634,3.20249 18.5629,-5.2675c36.05214,-111.95957 34.58141,-107.23931 34.65834,-107.71265c1.27891,-7.83339 -5.60041,-14.59783 -13.43448,-13.13852zM143.1863,33.2568c-36.02896,111.8608 -34.51657,107.10359 -34.58107,107.39922c-0.51499,2.3388 -2.57059,3.40405 -4.26237,3.40405c-0.7394,0 -1.79895,-0.18913 -2.78694,-1.05014l-25.88566,-41.08986l26.60894,-26.6086c1.31184,-1.31184 1.31184,-3.43899 0,-4.75116c-1.31184,-1.31083 -3.43899,-1.3115 -4.75116,0l-26.60894,26.6086l-41.08784,-25.88398c-2.11809,-2.44529 -0.88452,-6.33813 2.35223,-7.05099c0.28991,-0.06316 30.00493,-10.28641 105.61136,-36.2453c3.04527,-0.42966 5.76301,2.13656 5.39146,5.26817z"></path></g></g></svg></button>
+          </div>
+            </div>      
+</footer> 
+<div class="footer-2 flex lg:flex-row flex-col md:flex-col flex-wrap justify-center h-auto py-5 lg:space-x-72    space-y-8 lg:space-y-0  bg-section5 w-full items-center border-t">
+  <div class="container-1 flex">
+<h1 class="text-grayColor">Copyright © 2022 Travigo.All right reserved.</h1>
+  </div>
+  <div class="icons flex flex-row space-x-2 justify-center items-center flex-wrap">
+    <button class=" bg-originalWhite rounded-full w-10 h-10 text-center flex justify-center items-center   transition-all"><i class='bx bxl-instagram-alt text-green text-2xl'></i></button>
+    <button class=" bg-originalWhite rounded-full w-10 h-10 text-center flex justify-center items-center   transition-all"><i class='bx bxl-facebook text-green text-2xl'></i></button>
+    <button class=" bg-originalWhite rounded-full w-10 h-10 text-center flex justify-center items-center   transition-all"><i class='bx bxl-twitter text-green text-2xl'></i></button>
+    <button class=" bg-originalWhite rounded-full w-10 h-10 text-center flex justify-center items-center   transition-all"><i class='bx bxl-linkedin text-green text-2xl'></i></button>
+  </div>
+</div>
+<!-- NAV BURGER MENU -->
+<script>
+// $(document).ready(function(){
+//   $('#hamburgerButton').click(function(){
+//     $('.mobile-nav').toggleClass('hidden');
+//   })
+// });
+$(document).ready(function(){
+  $('#hamburgerButton').click(function(){
+    $('.mobile-nav').slideToggle(600);
+  })
+});
+</script>
+<!-- Smooth Scrollbar -->
+<script>
+  const body = document.body,
+  scrollWrap = document.querySelector("#smooth-scrollbar")[0],
+  height = scrollWrap.getBoundingClientRect().height -1,
+  speed = 0.04;
+  var offset = 0;
+  body.style.height = Math.floor(height) + "px";
+  function smoothScroll(){
+    offset += (window.pageYOffset - offset) * speed;
+    var scroll = "translateY(-"+ offset + "px) translateZ(0)";
+    scrollWrap.style.transform = scroll
+    callScroll = requestAnimationFrame(smoothScroll);
+  }
+  smoothScroll();
+</script>
+
+
+<!-- Jquery -->
+<script>
+  $(document).ready(function(){
+    $('#yearlyButton').click(function(){
+      $('.toggle-div1').slideToggle({
+        "display":"flex",
+      })
+    })
+  });
+  $(document).ready(function(){
+    $('#monthlyButton').click(function(){
+      $('.monthly-price').css("border-color","#1FC28B");
+    })
+  });
+  $(document).ready(function(){
+    $('#yearlyButton').click(function(){
+      $('.yearly-price').css("border-color","#1FC28B");
+    })
+  });
+  $(document).ready(function(){
+    $('#monthlyButton').click(function(){
+      $('.yearly-price').css({
+        'border-color':'rgb(229 231 235)',
+      })
+    })
+  });
+  $(document).ready(function(){
+    $('#yearlyButton').click(function(){
+      $('.monthly-price').css({
+        'border-color':'rgb(229 231 235)',
+      })
+    })
+  });
+ $(document).ready(function(){
+   $('#priceButton').click(function(){
+     $('#priceCard').fadeToggle(400);
+   })
+ });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<!-- GSAP -->
+<script>
+gsap.from(".header-text-h8",{
+  opacity:0,
+y:-16,
+duration:5,
+});
+gsap.from(".the-secondtext",{
+  opacity:0,
+y:-16,
+duration:1.2,
+delay:1,
+});
+
+gsap.from(".first-button",{
+  opacity:0,
+duration:1,
+delay:1.3,
+});
+gsap.from(".second-button",{
+  opacity:0,
+duration:1,
+delay:1.5,
+});
+gsap.from(".header-img",{
+  opacity:0,
+y:-16,
+duration:3,
+delay:1.9,
+});
+gsap.from(".leaf-1",{
+  opacity:0,
+rotate:-20,
+duration:1.2,
+delay:3.5,
+});
+gsap.from(".leaf-2png",{
+  opacity:0,
+rotate:20,
+duration:1.2,
+delay:4,
+});
+
+</script>
+   </body>
+</html>
